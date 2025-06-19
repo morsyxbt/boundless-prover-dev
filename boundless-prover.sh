@@ -11,7 +11,7 @@ NC='\033[0m' # No Color
 # Banner
 echo -e "${BLUE}"
 echo "╔══════════════════════════════════════════════════════════╗"
-echo "║                🛡️ SMorsyxbt GUILD RITUAL              ║"
+echo "║                🛡️ Sorsyxbt GUILD RITUAL              ║"
 echo "║         Auto Quest for Boundless | Dev + Prover         ║"
 echo "╚══════════════════════════════════════════════════════════╝"
 echo -e "${NC}"
