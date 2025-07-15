@@ -39,23 +39,23 @@ get_user_inputs() {
 
     echo ""
     echo -e "${BLUE}Which role do you want to activate?${NC}"
-    echo "1) Prover (Requires 10 USDC)"
+    echo "1) Prover (Requires 0.01 USDC)"
     echo "2) Dev (Requires 0.000001 ETH)"
-    echo "3) Both (10 USDC + 0.000001 ETH)"
+    echo "3) Both (0.01 USDC + 0.000001 ETH)"
     read -p "Select role (1, 2 or 3): " ROLE_CHOICE
 
     if [[ "$ROLE_CHOICE" == "1" ]]; then
         ROLE="prover"
-        read -p "Enter USDC stake amount (default: 10): " STAKE_AMOUNT
-        STAKE_AMOUNT=${STAKE_AMOUNT:-10}
+        read -p "Enter USDC stake amount (default: 0.01): " STAKE_AMOUNT
+        STAKE_AMOUNT=${STAKE_AMOUNT:-0.01}
     elif [[ "$ROLE_CHOICE" == "2" ]]; then
         ROLE="dev"
         read -p "Enter ETH deposit amount (default: 0.000001): " DEPOSIT_AMOUNT
         DEPOSIT_AMOUNT=${DEPOSIT_AMOUNT:-0.000001}
     elif [[ "$ROLE_CHOICE" == "3" ]]; then
         ROLE="both"
-        read -p "Enter USDC stake amount (default: 10): " STAKE_AMOUNT
-        STAKE_AMOUNT=${STAKE_AMOUNT:-10}
+        read -p "Enter USDC stake amount (default: 0.01): " STAKE_AMOUNT
+        STAKE_AMOUNT=${STAKE_AMOUNT:-0.01}
         read -p "Enter ETH deposit amount (default: 0.000001): " DEPOSIT_AMOUNT
         DEPOSIT_AMOUNT=${DEPOSIT_AMOUNT:-0.000001}
     else
